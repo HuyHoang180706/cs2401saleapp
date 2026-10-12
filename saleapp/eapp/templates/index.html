@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ</title>
+</head>
+<body>
+   <nav class="navbar navbar-expand-sm bg-light">
+
+  <div class="container-fluid">
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 1</a>
+      </li>
+        {% for c in categories %}
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 2</a>
+      </li>
+        {% endfor %}
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 3</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<section class="contain">
+    <div class="row">
+        {% for p in products %}
+    <div class="card">
+  <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">John Doe</h4>
+    <p class="card-text">Some example text.</p>
+    <a href="#" class="btn btn-primary">Xem chi tiết</a>
+      <a href="#" class="btn btn-primary">Đặt hàng</a>
+  </div>
+ </div>
+</section>
+
+   <footer>
+<div class="mt-4 p-5 bg-primary text-white rounded">
+  <h1>Global</h1>
+  <p>Lorem ipsum...</p>
+</div>
+</footer>
+</body>
+</html>
